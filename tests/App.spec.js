@@ -14,12 +14,12 @@ test.describe('Authorization', () => {
     // Click [placeholder="Email"]
     await page.locator('[placeholder="Email"]').click();
     // Fill [placeholder="Email"]
-    await  page.locator('[placeholder="Email"]').fill(user.email);
+    await  page.locator('[placeholder="Email"]').fill(email);
  
     // Click [placeholder="Пароль"]
     await page.locator('[placeholder="Пароль"]').click();
     // Fill [placeholder="Пароль"]
-    await page.locator('[placeholder="Пароль"]').fill(user.pass);
+    await page.locator('[placeholder="Пароль"]').fill(pass);
 
     // Press Enter
     await Promise.all([
@@ -47,7 +47,7 @@ test.describe('Authorization', () => {
     // Click [placeholder="Email"]
     await page.locator('[placeholder="Email"]').click();
     // Fill [placeholder="Email"]
-    await  page.locator('[placeholder="Email"]').fill(user.email);
+    await  page.locator('[placeholder="Email"]').fill(email);
 
     // Click [placeholder="Пароль"]
     await page.locator('[placeholder="Пароль"]').click();
